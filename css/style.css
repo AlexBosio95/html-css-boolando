@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #ff6900;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 1;
+}
+
+.container{
+    background-color: #ff6900;
+    width: 80%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.select, .log {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    font-size: 0.8rem;
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.h_format_style{
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.log{
+    justify-content: flex-end;
+}
+
+.logo{
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo img{
+    height: 26px;
+}
+
+
+
+/* Main */
+
+main{
+    position: relative;
+    padding: 90px 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Contenitore card */
+
+.m_container{
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    width: calc(100% / 3 - 20px);
+    position: relative;
+    margin: 20px 10px;
+
+}
+
+.container_img{
+    position: relative;
+    width: 100%;
+}
+
+.container_img .img_up{
+    width: 100%;
+    display: block;
+}
+
+.container_img .img_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container_img .img_down{
+    width: 100%;
+    display: block;
+
+}
+
+.img_down:hover{
+    display: none;
+}
+
+
+.discount span{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.sustainability{
+    background-color: green;
+    position: absolute;
+    bottom: 30px;
+    left: 55px;
+    text-align: center;
+    padding: 4px 10px;
+}
+
+.o_sustainability{
+    background-color: green;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    text-align: center;
+    padding: 4px 10px;
+}
+
+.sus_style{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.heart{
+    color: black;
+    background-color: white;
+    padding: 10px 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.heart:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Description card */
+
+
+.card .text{ 
+    padding-top: 10px;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+
+.brand, .name{
+    display: block;
+}
+
+.brand{
+    font-size: 0.8rem;
+}
+
+.name{
+    font-weight: 600;
+}
+
+.price{
+    color: red;
+    font-weight: 600;
+}
+
+.font_small{
+    font-size: 0.8rem;
+}
+
+.price_old{
+    text-decoration: line-through;
+}
+
+.discount{
+    background-color: red;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+    padding: 2px 10px;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: #1a1a1a;
+}
+
+.f_container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.left_f {
+    flex-grow: 1;
+}
+
+.left_f .info{
+    margin-top: 7px;
+}
+
+
+.left_f a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding-right: 7px;
+}
+
+
+.right_f{
+    flex-grow: 1;
+    text-align: right;
+}
+
+.right_f span{
+    margin-right: 10px;
+}
+
+.right_f .social{
+    margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
