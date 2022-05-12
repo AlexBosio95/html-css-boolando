@@ -12,6 +12,8 @@ header{
     width: 100%;
     background-color: #ff6900;
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -76,67 +78,9 @@ main{
     border: 1px solid white;
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
 }
 
-.card{
-    width: calc(100% / 3 - 20px);
-    position: relative;
-    margin: 20px 10px;
-
-}
-
-.container_img{
-    position: relative;
-    width: 100%;
-}
-
-.container_img .img_up{
-    width: 100%;
-    display: block;
-}
-
-.container_img .img_overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.container_img .img_down{
-    width: 100%;
-    display: block;
-
-}
-
-.img_down:hover{
-    display: none;
-}
-
-
-.discount span{
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-.sustainability{
-    background-color: green;
-    position: absolute;
-    bottom: 30px;
-    left: 55px;
-    text-align: center;
-    padding: 4px 10px;
-}
-
-.o_sustainability{
-    background-color: green;
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-    text-align: center;
-    padding: 4px 10px;
-}
 
 .sus_style{
     color: white;
@@ -144,19 +88,7 @@ main{
     font-size: 0.8rem;
 }
 
-.heart{
-    color: black;
-    background-color: white;
-    padding: 10px 10px;
-    position: absolute;
-    top: 10px;
-    right: 0;
-}
 
-.heart:hover{
-    color: red;
-    cursor: pointer;
-}
 
 
 /* Description card */
@@ -194,14 +126,7 @@ main{
     text-decoration: line-through;
 }
 
-.discount{
-    background-color: red;
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    text-align: center;
-    padding: 2px 10px;
-}
+
 
 
 
@@ -251,6 +176,93 @@ footer{
 .right_f .social{
     margin-top: 7px;
 }
+
+
+/* Correzione */
+
+
+.card-img .main-image{
+    display: inline-block;
+    width: 100%;
+}
+
+.card-img .secondary-image{
+    display: none;
+    width: 100%;
+}
+
+.card-img:hover .main-image{
+    display: none;
+}
+
+.card-img:hover .secondary-image{
+    display: inline-block;
+}
+
+.card{
+    width: calc(100% / 3);
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+.card-img{
+    position: relative;
+}
+
+.card-badge{
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+}
+
+.sustainability{
+    background-color: green;
+    text-align: center;
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+.o_sustainability{
+    background-color: green;
+    text-align: center;
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+.discount{
+    background-color: red;
+    text-align: center;
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+.discount span{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.heart{
+    color: black;
+    background-color: white;
+    padding: 10px 10px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.heart:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
 
 
 
